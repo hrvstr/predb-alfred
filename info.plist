@@ -42,7 +42,7 @@
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>PreDB</string>
+	<string>PREdb</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -136,7 +136,10 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string></string>
+	<string>requires jq
+
+install with homebrew:
+$ brew install jq</string>
 	<key>uidata</key>
 	<dict>
 		<key>5EB8EBA5-AAC5-4E2B-A31E-42562878AE1A</key>
@@ -165,6 +168,10 @@
 			<integer>30</integer>
 		</dict>
 	</dict>
+	<key>variablesdontexport</key>
+	<array/>
+	<key>version</key>
+	<string>1.0</string>
 	<key>webaddress</key>
 	<string>http://hrvstr.github.io</string>
 </dict>
