@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string></string>
+	<string>com.hrvstr.predb-alfred</string>
 	<key>category</key>
 	<string>Internet</string>
 	<key>connections</key>
@@ -36,15 +36,36 @@
 		</array>
 	</dict>
 	<key>createdby</key>
-	<string></string>
+	<string>hrvstr</string>
 	<key>description</key>
-	<string></string>
+	<string>Search for scene releases via PREdb.ovh</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
 	<string>PreDB</string>
 	<key>objects</key>
 	<array>
+		<dict>
+			<key>config</key>
+			<dict>
+				<key>lastpathcomponent</key>
+				<false/>
+				<key>onlyshowifquerypopulated</key>
+				<true/>
+				<key>removeextension</key>
+				<false/>
+				<key>text</key>
+				<string>{query}</string>
+				<key>title</key>
+				<string>PREdb</string>
+			</dict>
+			<key>type</key>
+			<string>alfred.workflow.output.notification</string>
+			<key>uid</key>
+			<string>5EB8EBA5-AAC5-4E2B-A31E-42562878AE1A</string>
+			<key>version</key>
+			<integer>1</integer>
+		</dict>
 		<dict>
 			<key>config</key>
 			<dict>
@@ -113,27 +134,6 @@
 			<key>version</key>
 			<integer>3</integer>
 		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>lastpathcomponent</key>
-				<false/>
-				<key>onlyshowifquerypopulated</key>
-				<true/>
-				<key>removeextension</key>
-				<false/>
-				<key>text</key>
-				<string>{query}</string>
-				<key>title</key>
-				<string>PREdb</string>
-			</dict>
-			<key>type</key>
-			<string>alfred.workflow.output.notification</string>
-			<key>uid</key>
-			<string>5EB8EBA5-AAC5-4E2B-A31E-42562878AE1A</string>
-			<key>version</key>
-			<integer>1</integer>
-		</dict>
 	</array>
 	<key>readme</key>
 	<string></string>
@@ -166,6 +166,6 @@
 		</dict>
 	</dict>
 	<key>webaddress</key>
-	<string></string>
+	<string>http://hrvstr.github.io</string>
 </dict>
 </plist>
