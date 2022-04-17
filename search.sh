@@ -8,7 +8,7 @@ if [[ -n "$1" ]]; then
 			subtitle: (
 				.cat + " | " +
 				(if .genre != "" then (.genre + " | " ) else null end) +
-				(.size | tostring) + "MB | " +
+				if .size != 0 then (.size | tostring) + "MB | " else null end  +
 				(.preAt | strftime("%d.%m.%y | %H:%M"))),
 			arg: .name,
 			icon: {
@@ -21,6 +21,7 @@ if [[ -n "$1" ]]; then
 					elif (.cat | test("MVID")) then "icons/mvid.png"
 					elif (.cat | test("PRE")) then "icons/tutorial.png"
 					elif (.cat | test("APP")) then "icons/app.png"
+					elif (.cat | test("GAME|NSW")) then "icons/game.png"
 					else "icons/unknown.png" end
 				) },
 			autocomplete: .name,
